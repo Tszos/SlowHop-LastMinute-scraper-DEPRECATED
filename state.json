@@ -1,0 +1,153 @@
+{
+  "heartbeat": "2026-11",
+  "new_rav4": {
+    "below": false,
+    "price": 181600
+  },
+  "offers": {
+    "411570": {
+      "dealer": "Toyota Warszawa Marki",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "411570",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/39/393c6f5249bbaa4da76bf4884f04e101__10294373.jpg",
+      "mileage_km": 61454,
+      "price": 181900,
+      "title": "EXECUTIVE_4X4 2,5 Hybrid 222 KM.Faktura Vat.23%.Salon Polska.",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/411570",
+      "year": 2024
+    },
+    "414507": {
+      "dealer": "Toyota Warszawa Marki",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "414507",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/a4/a46d25ff3cbd21969d8b63f34cf369c7__10034287.jpg",
+      "mileage_km": 33163,
+      "price": 167500,
+      "title": "Comfort+Style 4X2 2,5 Hybrid 218 KM.Salon Polska.Faktura Vat.23%.",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/414507",
+      "year": 2025
+    },
+    "423038": {
+      "dealer": "Toyota Warszawa Żerań",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "423038",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/67/67b4adbdd55ecb6728d35734836a11fb__10519535.jpg",
+      "mileage_km": 23487,
+      "price": 168900,
+      "title": "RAV4 2.5 Hybrid COMFORT + STYLE 4X2 | Faktura VAT 23% | Salon Polska",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/423038",
+      "year": 2025
+    },
+    "424107": {
+      "dealer": "Toyota Warszawa Marki",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "424107",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/5a/5a0da2a701a896f47a666115f7fd5c63__10503198.jpg",
+      "mileage_km": 5899,
+      "price": 171500,
+      "title": "COMFORT+STYLE 4X4 2,5 Hybrid 222 KM.Faktura Vat23%.Salon Polska.",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/424107",
+      "year": 2023
+    },
+    "424478": {
+      "dealer": "Toyota Warszawa Żerań",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "424478",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/17/17e7aa7614e00c46375a62bbbb5a90ca__10436056.jpeg",
+      "mileage_km": 49978,
+      "price": 159900,
+      "title": "COMFORT_4X2|Style 2,5 Hybrid 218 KM",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/424478",
+      "year": 2024
+    },
+    "425941": {
+      "dealer": "Toyota Warszawa Marki",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "425941",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/99/9908e1d250b2a0201a4b3f579fa99d6d__10621227.jpg",
+      "mileage_km": 55007,
+      "price": 157900,
+      "title": "COMFORT+STYLE_4x2 2,5 Hybrid 218 KM.Salon Polska.Faktura Vat.23%.",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/425941",
+      "year": 2024
+    },
+    "427896": {
+      "dealer": "Toyota Warszawa Żerań",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "427896",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/84/84c0972a1c027d89c5adccacd670f2c3__10577626.jpg",
+      "mileage_km": 40664,
+      "price": 166900,
+      "title": "RAV4 2.5 Hybrid Comfort+Style 4x2 | Faktura VAT 23% | Salon Polska",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/427896",
+      "year": 2025
+    },
+    "429093": {
+      "dealer": "Toyota Warszawa Żerań",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "429093",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/a9/a9dde1d5172bfcb8193a587d7b3d9643__10753827.jpeg",
+      "mileage_km": 151967,
+      "price": 119900,
+      "title": "RAV4 COMFORT_4X2 2,5 Hybrid 218 KM | Salon Polska | Faktura VAT 23% |",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/429093",
+      "year": 2023
+    },
+    "429591": {
+      "dealer": "Toyota Warszawa Marki",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "429591",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/66/66181f22a0dcbbd6e10a5ee1600ba593__10738748.jpg",
+      "mileage_km": 122499,
+      "price": 135900,
+      "title": "COMFORT+STYLE_4x4 2,5 Hybrid 218 KM.Salon Polska.Faktura Vat.23%.",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/429591",
+      "year": 2023
+    },
+    "430580": {
+      "dealer": "Toyota Warszawa Marki",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "430580",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/7d/7d4a2b00444ce74944045557a9d4ddfb__10832820.jpg",
+      "mileage_km": 62687,
+      "price": 139900,
+      "title": "Comfort+Style_4x2 2,5 Hybrid 218 KM.Salon Polska.Faktura Vat.23%.",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/430580",
+      "year": 2023
+    },
+    "430861": {
+      "dealer": "Toyota Warszawa Żerań",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "430861",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/fe/fe51f7036ee2d19eaa159911db828265__10791138.jpeg",
+      "mileage_km": 74343,
+      "price": 147900,
+      "title": "RAV4 COMFORT_4x4 2,5 Hybrid 218 KM | Salon Polska | Faktura VAT 23% |",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/430861",
+      "year": 2023
+    },
+    "437384": {
+      "dealer": "Toyota Warszawa Marki",
+      "first_seen": "2026-11-04T19:21:57+00:00",
+      "fuel": "Hybryda",
+      "id": "437384",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/a0/a042fc4047fccb675488d8e1dbeb7d71__10852410.jpg",
+      "mileage_km": 32287,
+      "price": 176900,
+      "title": "2.5 Hybrid Executive 4x4.Salon Polska.Faktura Vat-marża.Gwarancja.",
+      "url": "https://uzywanegrupacygan.pl/oferta/toyota-rav4/437384",
+      "year": 2024
+    }
+  }
+}

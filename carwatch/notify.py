@@ -11,8 +11,15 @@ import os
 import requests
 
 
+MAX_MESSAGE = 3900  # limit ntfy to 4096 bajtów
+
+
 def send(title: str, message: str, url: str | None = None, image: str | None = None,
-         priority: int = 4, tags: list[str] | None = None) -> None:
+         priority: int = 4, tags: list[str] | None = None,
+         extra_actions: list[tuple[str, str]] | None = None) -> None:
+    """extra_actions: dodatkowe przyciski (etykieta, url) w powiadomieniu ntfy."""
+    if len(message.encode()) > MAX_MESSAGE:
+        message = message.encode()[:MAX_MESSAGE].decode(errors="ignore") + "\n…"
     print(f"[powiadomienie] {title}\n{message}\n{url or ''}\n")
     sent = False
 
@@ -24,6 +31,8 @@ def send(title: str, message: str, url: str | None = None, image: str | None = N
         if url:
             payload["click"] = url
             payload["actions"] = [{"action": "view", "label": "Otwórz ofertę", "url": url}]
+        for label, link in (extra_actions or [])[:2]:
+            payload.setdefault("actions", []).append({"action": "view", "label": label, "url": link})
         if image:
             payload["attach"] = image
         headers = {}

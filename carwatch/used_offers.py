@@ -69,23 +69,29 @@ def matches(offer: Offer) -> bool:
     )
 
 
-def fetch_dealer_offers(session: requests.Session, station_id: int, dealer: str) -> list[Offer]:
-    url = config.USED_BASE_URL + config.USED_LISTING_PATH
+def fetch_listing(session: requests.Session, base_url: str, params: dict, dealer: str,
+                  max_pages: int = config.MAX_PAGES) -> list[Offer]:
+    """Wszystkie strony listingu RAV4 dla podanych filtrów (bez filtrowania lokalnego)."""
+    url = base_url + config.USED_LISTING_PATH
     found: dict[str, Offer] = {}
-    for page in range(1, config.MAX_PAGES + 1):
-        params = {"station-id": station_id, "year-from": config.MIN_YEAR}
+    for page in range(1, max_pages + 1):
+        query = dict(params)
         if page > 1:
-            params["strona"] = page
-        resp = session.get(url, params=params, headers=config.HEADERS, timeout=30)
+            query["strona"] = page
+        resp = session.get(url, params=query, headers=config.HEADERS, timeout=30)
         resp.raise_for_status()
-        page_offers = parse_listing(resp.text, dealer)
-        new = [o for o in page_offers if o.id not in found]
+        new = [o for o in parse_listing(resp.text, dealer, base_url) if o.id not in found]
         if not new:
             break
         found.update((o.id, o) for o in new)
         if f"strona={page + 1}" not in resp.text:
             break
-    return [o for o in found.values() if matches(o)]
+    return list(found.values())
+
+
+def fetch_dealer_offers(session: requests.Session, station_id: int, dealer: str) -> list[Offer]:
+    params = {"station-id": station_id, "year-from": config.MIN_YEAR}
+    return [o for o in fetch_listing(session, config.USED_BASE_URL, params, dealer) if matches(o)]
 
 
 def fetch_all(session: requests.Session) -> list[Offer]:
@@ -93,3 +99,16 @@ def fetch_all(session: requests.Session) -> list[Offer]:
     for station_id, dealer in config.DEALERS.items():
         offers.extend(fetch_dealer_offers(session, station_id, dealer))
     return offers
+
+
+def fetch_market(session: requests.Session) -> list[Offer]:
+    """RAV4 z całej Polski (program Toyota Pewne Auto) – do porównania cen."""
+    offers: list[Offer] = []
+    for fuel in config.ALLOWED_FUELS:
+        param = config.MARKET_FUEL_PARAMS.get(fuel)
+        if not param:
+            continue
+        params = {"year-from": config.MIN_YEAR, "fuel": param}
+        offers.extend(fetch_listing(session, config.MARKET_BASE_URL, params, "",
+                                    config.MARKET_MAX_PAGES))
+    return [o for o in offers if matches(o)]

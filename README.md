@@ -3,10 +3,19 @@
 Powiadomienia na telefon o:
 
 1. **nowych ofertach używanych Toyot RAV4** na [uzywanegrupacygan.pl](https://uzywanegrupacygan.pl/)
-   w salonach **Toyota Warszawa Żerań** i **Toyota Warszawa Marki** – tylko hybrydy, rocznik **od 2023**
-   (dodatkowo: o obniżce ceny już obserwowanej oferty),
+   w salonach **Toyota Warszawa Żerań**, **Toyota Warszawa Marki** i **Lexus Warszawa Żerań** – tylko hybrydy,
+   rocznik **od 2023** (dodatkowo: o obniżce ceny już obserwowanej oferty). Powiadomienie zawiera:
+   - wersję i napęd, kolor, tapicerkę, oznaczenia (bezwypadkowy, salon PL, FV 23%),
+   - **porównanie z rynkiem** – medianę cen podobnych RAV4 (rocznik, przebieg, napęd) z całej Polski
+     w programie Toyota Pewne Auto i różnicę w %,
+   - dane do sprawdzenia auta na [historiapojazdu.gov.pl](https://historiapojazdu.gov.pl/)
+     (nr rejestracyjny, VIN, data 1. rejestracji),
 2. **promocji na nowego RAV4** – gdy cena bazowa „od …” na
    [toyota.pl/nowe-samochody/rav4](https://www.toyota.pl/nowe-samochody/rav4) spadnie poniżej **175 000 zł**.
+
+3. **podsumowaniu tygodnia** (niedziela po 18:00) – wszystkie obserwowane oferty od najlepszej
+   względem rynku, z liczbą dni na stronie, historią obniżek oraz listą aut, które zniknęły
+   (sprzedane/zdjęte). Ręcznie: **Actions → RAV4 watch → Run workflow → „Wyślij teraz podsumowanie”**.
 
 Skrypt uruchamia się co godzinę w GitHub Actions i zapisuje znane oferty w `state.json`.
 
@@ -27,7 +36,8 @@ Opcjonalnie zamiast/obok ntfy: Telegram – sekrety `TELEGRAM_BOT_TOKEN` i `TELE
 ## Zmiana kryteriów
 
 Wszystko w `carwatch/config.py`: salony (`DEALERS`, ID z filtra „Salon” na stronie), minimalny rocznik,
-rodzaje napędu (domyślnie hybryda i hybryda plug-in), próg ceny nowego RAV4, powiadomienia o obniżkach.
+rodzaje napędu (domyślnie hybryda i hybryda plug-in), próg ceny nowego RAV4, powiadomienia o obniżkach,
+dzień i godzina podsumowania tygodnia.
 
 ## Uruchomienie lokalne
 

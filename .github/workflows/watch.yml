@@ -2,7 +2,7 @@ name: RAV4 watch
 
 on:
   schedule:
-    - cron: "*/20 * * * *"   # co ok. 20 minut (GitHub potrafi opóźniać uruchomienia)
+    - cron: "17 * * * *"     # co godzinę (o :17; GitHub potrafi opóźniać uruchomienia)
   workflow_dispatch:
 
 permissions:

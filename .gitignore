@@ -52,5 +52,4 @@ docs/_build/
 .idea
 .idea/
 
-*.xlsx
-SlowHopeLastMinutes.xlsx
+.pytest_cache/

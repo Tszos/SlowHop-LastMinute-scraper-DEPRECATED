@@ -8,7 +8,7 @@ Powiadomienia na telefon o:
 2. **promocji na nowego RAV4** – gdy cena bazowa „od …” na
    [toyota.pl/nowe-samochody/rav4](https://www.toyota.pl/nowe-samochody/rav4) spadnie poniżej **175 000 zł**.
 
-Skrypt uruchamia się co ~20 minut w GitHub Actions i zapisuje znane oferty w `state.json`.
+Skrypt uruchamia się co godzinę w GitHub Actions i zapisuje znane oferty w `state.json`.
 
 ## Konfiguracja (jednorazowo, ~5 minut)
 

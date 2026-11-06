@@ -28,13 +28,17 @@
       "first_seen": "2026-11-04T20:39:39+01:00",
       "fuel": "Hybryda",
       "id": "405620",
-      "image": "https://panel.pewneauto.pl/media/thumbnails/de/de00968fa1151c2b8688291e9dd8c478__10309679.jpg",
+      "image": "https://panel.pewneauto.pl/media/thumbnails/1e/1e4ac22d75134742581a3ba5f19791d0__10986121.jpg",
       "mileage_km": 23996,
-      "price": 163900,
+      "price": 156900,
       "price_history": [
         [
           "2026-11-04",
           163900
+        ],
+        [
+          "2026-11-06",
+          156900
         ]
       ],
       "title": "EXECUTIVE 4X2 / FV Marża / Salon PL / Gwarancja / Bezwypadkowy",

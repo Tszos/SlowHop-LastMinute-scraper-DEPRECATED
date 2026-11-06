@@ -12,3 +12,6 @@ ntfy pushes, and commits `state.json`. README (Polish) has setup and criteria; c
   usually ahead: `git pull --rebase` before committing, then `git push origin master`. Never hand-edit `state.json`.
 - PUBLIC repo: no secrets, tokens or the ntfy topic in code, commits or logs. They are Actions secrets.
 - Actions are free here only because the repo is public; don't make it private.
+
+## Long-term memory
+@~/personal-bootstrap/memory/projects/rav4-ntfy.md
